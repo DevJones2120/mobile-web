@@ -1,0 +1,20 @@
+body{
+    
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.container{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background: #1d9c8799;
+    max-width: 900px;
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+. 1{
+   display: flex;
+}
