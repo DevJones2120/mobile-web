@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgba(254, 252, 252, 0.243);
+}
+
+.container {
+    background: #fff;
+}
