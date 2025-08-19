@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
         background: #77BEF0;
         /* Altura */
         height: 130px;
-        border-bottom: 3px solid #093FB4;
+        border-bottom: 3px solid #33A1E0;
         /* Flexbox */
         display: flex;
         align-items: center;
@@ -33,4 +34,27 @@ body {
         color: white;
         text-transform: uppercase;
         font-size: 30px;
+    }
+    /* MENU DO SITE */
+    .menu {
+        display: flex;
+        justify-content: space-around ;
+        align-items: center;
+        background-color: #33A1E0 ;
+    }
+
+    .menu li {
+        
+        /* ESPAÇAMENTO */
+        padding: 18px;
+       
+    }
+
+    .menu li a {
+        font-size: 23px;
+        text-decoration: none;
+        color: white;
+        font-family: arial,Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 18px;
     }
