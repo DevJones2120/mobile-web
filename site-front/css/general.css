@@ -15,6 +15,10 @@ body {
     margin: 0 auto;
 }
 
+.titleGeneral h1 {
+    padding-left: 25px;
+    color: #33A1E0;
+}
 /* criando header */
     header {
         background: #77BEF0;
@@ -86,13 +90,14 @@ body {
         border-radius: 10px;
          /* CORTAR IMAGEM */
         overflow: hidden;
-        margin: 10px 35git px 20px 15px;
+        margin: 10px 35px 20px 15px;
         /* SOMBRA */
         box-shadow: 4px 3px 10px #9AA6B2;
     }
 
     .box img {
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid #9AA6B2;
+        box-shadow: 0px 0px 15px 0px #9AA6B2
     }
 
     .box p {
@@ -112,4 +117,20 @@ body {
     .box a:hover {
         text-decoration: underline;
 
+    }
+
+    .promocao {
+        /* flexbox */
+        display: flex;
+        justify-content: center ;
+    }
+
+    .promocao img {
+         max-width: 800px;
+        height: 180px;
+        border: 1px solid #77BEF0;
+        border-radius: 20px;
+        margin: 20px;
+        /* CORTAR IMAGEM */
+        overflow: hidden;
     }
