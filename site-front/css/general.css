@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    font-family: arial,Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -53,7 +54,6 @@ body {
         font-size: 23px;
         text-decoration: none;
         color: white;
-        font-family: arial,Arial, Helvetica, sans-serif;
         text-align: center;
         padding: 18px;
     }
@@ -76,10 +76,40 @@ body {
     /* CONTENT HOME */
     .content-box {
         margin: 20px;
-        border: 1px solid black;
+        /* FLEXBOX */
+        display: flex;
     }
 
     .box {
-        border: 1px solid blue;
+        border: 1px solid #77BEF0;
         max-width: 300px;
+        border-radius: 10px;
+         /* CORTAR IMAGEM */
+        overflow: hidden;
+        margin: 10px 35git px 20px 15px;
+        /* SOMBRA */
+        box-shadow: 4px 3px 10px #9AA6B2;
+    }
+
+    .box img {
+        border-bottom: 1px solid red;
+    }
+
+    .box p {
+        padding: 10px;
+        color: rgb(89, 103, 120);
+    }
+
+    .box a {
+        padding: 0 0 10px 10px;
+        display: block;
+        color:#4d75e4;
+        text-decoration: none;
+        /* NEGRITO */
+        font-weight: bold;
+    }
+
+    .box a:hover {
+        text-decoration: underline;
+
     }
