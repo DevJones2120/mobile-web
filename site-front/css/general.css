@@ -97,7 +97,7 @@ body {
 
     .box img {
         border-bottom: 1px solid #9AA6B2;
-        box-shadow: 0px 0px 15px 0px #9AA6B2
+        box-shadow: 0px 0px 15px 0px #9AA6B2;
     }
 
     .box p {
@@ -138,7 +138,8 @@ body {
     /* NOVIDADES */
     .novidades {
         border: 1px solid red;
-        background: rgb(246, 246, 246);
+        background: rgb(195, 230, 255,0.4);
+        box-shadow: 0px 0px 30px 10px rgb(184, 216, 239);
         margin-top: 20px;
         /*FLEXBOX */
         display: flex;
@@ -147,7 +148,7 @@ body {
 
     .novidades span {
         font-size: 150px;
-        filter: drop-shadow(3px 3px 15px #7393eb);
+        filter: drop-shadow(3px 3px 15px #1e51dc);
     }
 
 
@@ -170,16 +171,16 @@ body {
         height: 35px;
         border-radius: 5px;
         outline: none;
-        border: 1px solid #4d75e4;
+        border: 1px solid #1e51dc;
     }
 
     .novidades form button {
-        border: 1px solid #4d75e4;
+        border: 1px solid #1e51dc;
         background: transparent;
         cursor: pointer;
         border-radius: 10px;
         padding: 10px;
-        color: ;
+        color: black;
         font-weight: bold;
     }
 
@@ -194,4 +195,9 @@ body {
 
     footer p {
         color: #fff;
+    }
+
+    /* PÁGINA SOBRE */
+    .spaceSobre {
+        margin: 20px 0 20px 0;
     }
