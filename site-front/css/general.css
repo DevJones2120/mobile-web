@@ -197,6 +197,8 @@ body {
         color: #fff;
     }
 
+
+
     /* PÁGINA SOBRE */
     .spaceSobre {
         margin: 20px 0 20px 0;
@@ -220,27 +222,31 @@ body {
         cursor: pointer;
     }
 
-    .corpo {
-        width: 80%;
-        margin: 0 auto;
-    }
-
     .cards {
         display: flex;
-        gap: 60%;
+        gap: 60px;
     }
 
     /* Cartão Individual */
-    .card {
-        border: 1px solid #000;
-        border-radius: 20px;
-        padding: 20px;
-        box-shadow: 10px 10px black;
-        background: #fff;
+    .card img {
+        border-radius: 30px;
+        margin-top: 20px;
+        padding: 15px;
+        width: 400px;
+        display: block;
     }
 
-    .card-image {
-        display: block;
-        width: 100%;
+
+    /* CORES HOVER */
+    .card:nth-child(1) :hover {
+        background: #89cffb;
+    }
+
+    .card:nth-child(2) :hover {
+        background: #f52218;
+    }
+
+    .card:nth-child(3) :hover {
+        background: #145ea5;
     }
 
