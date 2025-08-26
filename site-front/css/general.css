@@ -229,10 +229,11 @@ body {
     }
 
     .card {
+        display: flex;
         border: 1px solid #77BEF0;
         max-width: 300px;
         border-radius: 10px;
-         /* CORTAR IMAGEM */
+        /* CORTAR IMAGEM */
         overflow: hidden;
         margin: 10px 35px 20px 15px;
         /* SOMBRA */
@@ -246,6 +247,8 @@ body {
 
 
     /* PÁGINA DE CONTATO */
+    
+
     .text-contato {
         margin: 0 0 20px 20px;
         font-size: 42px;
@@ -293,7 +296,27 @@ body {
         margin-top: 10px;
     }
 
+    legend {
+        padding: 10px;
+        display: inline-block;
+        font-size: 18px;
+    }
 
+    .form-group-info {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-control-padrão {
+        width: 100%;
+        max-width: 40px;
+        height: 30px;
+        border: 2px solid #4d75e4;
+        outline: none;
+        padding-left: 5px;
+        border-radius: 8px;
+    }
 
 
 

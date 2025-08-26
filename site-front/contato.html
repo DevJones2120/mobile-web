@@ -70,9 +70,28 @@
                     <option value="mg">Minas Gerais</option>
                     <option value="outros">Outros</option>
                 </select>
+            </article>
 
+            <article>
+                <fieldset>
+                    <legend>Receber email</legend>
+                    <section class="form-group-info">
+                        <label for="sim">Sim</label>
+                        <input type="checkbox" id="sim" />
+                    </section>
+                </fieldset>    
             </article>
             
+            <article class="form-group-info">
+                <label for="idade">Idade</label>
+    
+                <input type="number" id="idade" min="14" max="120" class="form-control-padrão">
+            </article>
+
+            <article class="form-group-info">
+                <label for="nivel">Nível de satisfação</label>
+                <input type="range" id="nivel" min="0" max="10">
+            </article>
         </form>
     </main>
 </body>
