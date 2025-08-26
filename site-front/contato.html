@@ -40,12 +40,12 @@
         <form>
             <article class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" placeholder="Digite seu nome">
             </article>
 
             <article class="form-group">
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="text" id="email" placeholder="Digite seu email">
             </article>
 
             <article class="form-group-sexo">
@@ -64,7 +64,7 @@
 
             <article class="form-group">
                 <select>
-                    <option>Selecione Estado</option>
+                    <option >Selecione Estado</option>
                     <option value="sp">São Paulo</option>
                     <option value="rj">Rio de Janiero</option>
                     <option value="mg">Minas Gerais</option>
@@ -74,7 +74,7 @@
 
             <article>
                 <fieldset>
-                    <legend>Receber email</legend>
+                    <legend class="title">Receber email</legend>
                     <section class="form-group-info">
                         <label for="sim">Sim</label>
                         <input type="checkbox" id="sim" />
@@ -83,14 +83,27 @@
             </article>
             
             <article class="form-group-info">
-                <label for="idade">Idade</label>
-    
+                <label for="idade" class="title">Idade</label>
                 <input type="number" id="idade" min="14" max="120" class="form-control-padrão">
             </article>
 
             <article class="form-group-info">
-                <label for="nivel">Nível de satisfação</label>
+                <label for="nivel" class="title">Nível de satisfação</label>
                 <input type="range" id="nivel" min="0" max="10">
+            </article>
+
+            <article class="form-group-info">
+                <label for="doc" class="title">Importar arquivo</label>
+                <input type="file" id="doc">
+            </article>
+
+            <article class="form-group-info">
+                <label for="descricao" class="title">Descrição</label>
+                <textarea id="descricao" class="comentario" placeholder="Faça uma breve descrição"></textarea>
+            </article>
+
+            <article>
+                <button type="submit" class="btn-enviar">Enviar informações</button>
             </article>
         </form>
     </main>
