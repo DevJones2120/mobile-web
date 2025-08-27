@@ -138,7 +138,7 @@ body {
     /* NOVIDADES */
     .novidades {
         background: rgb(195, 230, 255,0.4);
-        box-shadow: 0px 0px 30px 10px rgb(184, 216, 239);
+        box-shadow: 0px 0px 30px 10px rgb(218, 240, 255);
         margin-top: 20px;
         /*FLEXBOX */
         display: flex;
@@ -226,12 +226,19 @@ body {
         display: flex;
         margin: 20px;
         justify-content: center;
-        
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
+        
 
     .card {
         border: 1px solid red;
         margin-top: 50px;
+        display: flex;
+        padding: 2px;
+        box-shadow: 0px 0px 30px 10px rgb(218, 240, 255);
+        transition: background-color 0.8s;
     }
 
     .card img {
@@ -240,14 +247,14 @@ body {
         height: auto;
     }
 
-    .card {
-        display: flex;
-        padding: 2px;
+    .card p, h2 {
+        margin: 20px;
     }
 
     .card:hover {
-        background-color: #4d75e4;
+        background-color: rgb(218, 240, 255);;
         transition: background-color 0.9s;
+
     }
 
 
