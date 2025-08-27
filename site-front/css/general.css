@@ -201,6 +201,7 @@ body {
     /* PÁGINA SOBRE */
     .spaceSobre, .spaceContato{
         margin: 20px 0 20px 0;
+        padding-left: 20px;
     }
 
     .containerLista {
@@ -221,7 +222,7 @@ body {
         cursor: pointer;
     }
 
-    .cards {
+    .content-cards {
         display: flex;
         margin: 20px;
         justify-content: center;
@@ -229,21 +230,27 @@ body {
     }
 
     .card {
-        display: flex;
-        border: 1px solid #77BEF0;
-        max-width: 300px;
-        border-radius: 10px;
-        /* CORTAR IMAGEM */
-        overflow: hidden;
-        margin: 10px 35px 20px 15px;
-        /* SOMBRA */
-        box-shadow: 4px 3px 10px #9AA6B2;
+        border: 1px solid red;
+        margin-top: 50px;
     }
 
     .card img {
-        border-bottom: 1px solid #9AA6B2;
-        box-shadow: 0px 0px 15px 0px #9AA6B2;
+        display: flex;
+        width: 450px;
+        height: auto;
     }
+
+    .card {
+        display: flex;
+        padding: 2px;
+    }
+
+    .card:hover {
+        background-color: #4d75e4;
+        transition: background-color 0.9s;
+    }
+
+
 
 
     /* PÁGINA DE CONTATO */
