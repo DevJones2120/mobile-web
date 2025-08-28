@@ -199,6 +199,7 @@ body {
 
 
     /* PÁGINA SOBRE */
+  
     .spaceSobre, .spaceContato{
         margin: 20px 0 20px 0;
         padding-left: 20px;
@@ -250,8 +251,8 @@ body {
     }
 
     .card:hover {
-        background-color: rgb(218, 240, 255);;
-        transition: background-color 0.9s;
+        background-color: rgb(218, 240, 255);
+        transition: background-color 0.1s;
 
     }
 
