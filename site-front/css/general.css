@@ -199,7 +199,11 @@ body {
 
 
     /* PÁGINA SOBRE */
-  
+    .fundo {
+        background-image: url(https://img.freepik.com/fotos-gratis/arranjo-de-itens-de-viagem-de-alto-angulo_23-2149617688.jpg);
+        background-size: cover;
+    }
+    
     .spaceSobre, .spaceContato{
         margin: 20px 0 20px 0;
         padding-left: 20px;
