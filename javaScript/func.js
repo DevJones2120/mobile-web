@@ -1,13 +1,14 @@
-function mostrarNome(nome) {
-    document.write(nome)
+function mostrarNome(nome, idade) {
+    document.write("Meu nome é ", nome, "e tenho ", idade)
 }
 
 function pularLinha(){
     document.write("<br><br>")
 }
+
 // Chamar função
 pularLinha()
-mostrarNome("Davi")
+mostrarNome("Davi", 25)
 pularLinha()
 pularLinha()
-mostrarNome("Fernanda")
+mostrarNome("Fernanda ", 25) 
