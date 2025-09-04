@@ -1,11 +1,14 @@
 
 
+console.log("Bem vindo a base cálculos")
+
+
 // Funções
 
 // soma
 function somar( num1, num2) {
     console.log("Aqui está o resultado")
-    console.log( num1 + num2)
+    console.log(num1 + num2)
    
 }
 
