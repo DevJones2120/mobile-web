@@ -10,9 +10,22 @@ const result = document.getElementById("result")
 // Função
 function soma(event) {
     event.preventDefault()
+    // Validação de formulário
+    if (num1.value == "") {
+        alert("preencha o campo");
+        return false;
+    }
+
+    if(num2.value == || num2.value == "") {
+        alert("Preencha o campo");
+        return false;
+    }
+
+
     result.innerHTML = Number(num1.value) + Number(num2.value)
     num1.value = "";
     num2.value = "";
+
 }
 
 function sub(event) {
