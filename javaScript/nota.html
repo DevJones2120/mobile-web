@@ -11,10 +11,11 @@
         <form>
             <section class="form-control">
                 <label for="nota">Nota:</label>
-                <input type="number" id="nota">
+                <input type="number" id="nota" max="10"
+                min="0">
             </section>
             <section class="form-control">
-                <button onclick="resultadoNotaClick()" id="verifica-nota">Verificar Nota</button>
+                <button onclick="resultadoNotaClick(event)" id="verifica-nota">Verificar Nota</button>
                 
             </section>
 
