@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./festa.css">
+    <title>Festa</title>
+</head>
+<body>
+    <main class="container">
+        <form>
+            <section class="controle">
+                <label for="festa">Idade</label>
+                <input type="number" id="idade">
+            </section>
+
+            <section id="mensagem">
+                <span>Digite sua idade</span>
+            </section>
+
+            <section class="controle">
+                <button onclick="resultadoIdadeClick(event)" id= "verifica-idade">Verificar idade</button>
+            </section>
+
+            <div id="result"></div>
+        </form>
+    </main>
+    <script src="./festa.js"></script>
+</body>
+</html>

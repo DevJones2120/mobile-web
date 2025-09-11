@@ -7,7 +7,6 @@ const message = document.getElementById("message");
 //  Função
 function resultadoNotaClick(event) {
     event.preventDefault()
-    // console.log(inputNota.value)
 
     // Lógica-condição
     if (inputNota.value >= 6) {
