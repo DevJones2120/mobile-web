@@ -2,6 +2,7 @@
 
 const inputNota = document.getElementById("nota");
 const resultado = document.getElementById("result");
+const message = document.getElementById("message");
 
 //  Função
 function resultadoNotaClick(event) {
@@ -10,12 +11,19 @@ function resultadoNotaClick(event) {
 
     // Lógica-condição
     if (inputNota.value >= 6) {
-        // alert("Aprovado")
-        resultado.innerHTML = "Aprovado"
+        resultado.innerHTML = "Aprovado!"
+
     } else {
-        // alert("Reprovado")
-        resultado.innerHTML = "Reprovado"
+        resultado.innerHTML = "Reprovado!"
     }
+
+        // Validação de formulário
+    if (inputNota.value == "") {
+        message.style.display = "block";
+        return false;
+    }
+
+    message.style.display = "none"
 
     inputNota.value = ""
 
