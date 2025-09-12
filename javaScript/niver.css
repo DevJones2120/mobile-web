@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://wallpapers.com/images/hd/funny-chihuahua-birthday-picture-711biqqwt50nii85.jpg");
+    background-size: cover;
+}
+
+.card {
+    color: #fff;
+    text-shadow:
+        4px 4px 6px #000000,
+        0 0 1em rgb(252, 2, 2),
+        0 0 0.2em rgb(255, 255, 255);;
+    border: 2px solid rgb(75, 181, 252)
+
+}

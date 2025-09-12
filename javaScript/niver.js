@@ -7,7 +7,7 @@ function diasParaNiver () {
         diasFaltando += 7;
     }
 
-    documento.getElementById("dias").textContent = diasFaltando
+    document.getElementById("dias").textContent = diasFaltando
 }
 
 
