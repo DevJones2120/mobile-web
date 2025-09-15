@@ -4,87 +4,111 @@
 }
 
 body {
-    margin-top: 200px;
-    background: #483D8B;
-    background-image: url("https://cinecriticas.com.br/wp-content/uploads/2012/03/Cine22-7.jpg");
-
-    img {
-        
-        background-position: center;
-        background-repeat: no-repeat;
-        
-    }
-}
-
-.container {
+   background-image: url("./img/projetox.jpg");
+   background-size: 87%;
     
-    /* Largura */
-    width: 100%;
-    max-width:450px;
-    /*Borda*/
-    border: 2px solid white;
-    /* Borda arrendondada */
-    border-radius: 5px;
-    /* Centralizar minha tela*/
-    margin: 40px auto;
 }
 
-.container form {
-    /*Flexbox*/
-    /* padding-top: 200px; */
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Formulário */
 .controle input {
-    /*Espaçamento entre os elementos*/
+    border-radius: 4px;
     margin-top: 15px;
     margin-bottom: 15px;
-    /*Efeito colateral do navegador*/
-    outline: none;
-    /*Espaçamento dentro do elemento*/
     padding: 5px;
 }
 
 .controle label {
-    /* Espaçamento entre os elementos */
-    margin-top: 15px;
-    color: #fff;
+    margin-top: 70px;
+    color: #fffcfc;
     display: block;
 }
 
+.mensagem {
+    color: aliceblue blue;
+}
+
+#result {
+    color: rgb(167, 21, 44);
+}
+
 #verifica-idade {
-    /* Cor do fundo */
-    background: #990505;
-    /* Borda do Botão */
+    background: #3c327a;
     border: 1px solid white;
-    /*Cor de texto */
+    border-radius: 4px;
     color: #fff;
-    /*Espaçamento dentro do elemento */
     padding: 5px;
-    /* Espaçamento fora do elemento */
     margin-bottom: 10px;
-    /* Cursor mãozinha */
     cursor: pointer;
     transition: all 0.9s;
 }
 
 #verifica-idade:hover {
-    background-color: rgb(232, 229, 229);
-    color: #990505;
-    border: 2px solid black;
-}
-
-#result {
+    transition: 1.8s;
+    background-color: #990505;
     color: #fff;
-    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
 }
 
+span {
+    color: #fff;
+}
 
-#messagem span {
-    color: rgb(255, 251, 251);
-    padding-bottom: 10px;
+.container {
+    display: grid;
+    width: 100%;
+    gap: 20px; /* espaçamento */
+    grid-template-areas:
+        "one . form"
+        "three . two";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.container > form {
+    grid-area: form;
+    margin-top: 50px;
+    padding-right: 34%;
+}
+
+/* Imagens */
+.container > .one {
+    grid-area: one;
+    filter: brightness(0%)
     
+}
+
+.one:hover {
+    filter: brightness(100%);
+    transition: 2s;
+    
+}
+
+.container > #two {
+    grid-area: two;
+    filter: brightness(0%);
+    display: none;
+}
+
+#two:hover {
+    filter: brightness(100%);
+    transition: 2s;
+    
+}
+
+.container > .three {
+    grid-area: three;
+    filter: brightness(0%);
+}
+
+.three:hover {
+    filter: brightness(100%);
+    transition: 2s;
+    
+}
+
+.container img {
+    width: 75%;
+    height: auto;
+    border-radius: 4px;
 }
