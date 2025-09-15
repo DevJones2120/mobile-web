@@ -4,10 +4,23 @@ body {
 }
 
 .card h1,h2 {
-    font-size: 90px;
+    font-size: 70px;
     color: #fff;
     text-shadow:
     4px 4px 6px #000000,
     0 0 1em rgb(252, 2, 2),
     0 0 0.2em rgb(255, 255, 255);;
 }
+
+.gifs {
+    padding-top: 8%;
+    height: 300px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gifs img {
+    border-radius: 8px;
+}
+

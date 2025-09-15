@@ -87,7 +87,7 @@ span {
 .container > #two {
     grid-area: two;
     filter: brightness(0%);
-    display: none;
+
 }
 
 #two:hover {
