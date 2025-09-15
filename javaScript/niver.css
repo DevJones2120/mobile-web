@@ -3,12 +3,15 @@ body {
     background-size: cover;
 }
 
-.card {
+.card h1,h2 {
+    font-size: 90px;
     color: #fff;
     text-shadow:
-        4px 4px 6px #000000,
-        0 0 1em rgb(252, 2, 2),
-        0 0 0.2em rgb(255, 255, 255);;
-    border: 2px solid rgb(75, 181, 252)
+    4px 4px 6px #000000,
+    0 0 1em rgb(252, 2, 2),
+    0 0 0.2em rgb(255, 255, 255);;
+}
 
+.one, .two {
+    
 }
