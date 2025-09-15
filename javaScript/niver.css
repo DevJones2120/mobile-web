@@ -13,7 +13,7 @@ body {
 }
 
 .gifs {
-    padding-top: 8%;
+    padding-top: 7%;
     height: 300px;
     width: auto;
     display: flex;
@@ -22,5 +22,5 @@ body {
 
 .gifs img {
     border-radius: 8px;
+    filter: drop-shadow(0.5rem 0.5rem 0.9em rgb(230, 167, 32));
 }
-
