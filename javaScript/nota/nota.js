@@ -27,7 +27,3 @@ function resultadoNotaClick(event) {
     inputNota.value = ""
 
 }
-
-
-
-

@@ -183,6 +183,13 @@ body {
         font-weight: bold;
     }
 
+    .novidades form button:hover {
+        color: #fff;
+        background-color: #1e51dc;
+        border: 1px solid #000; 
+
+    }
+
     footer {
         background: #000;
         height: 40px;
@@ -202,6 +209,7 @@ body {
     .fundo {
         background-image: url(https://img.freepik.com/fotos-gratis/arranjo-de-itens-de-viagem-de-alto-angulo_23-2149617688.jpg);
         background-size: cover;
+        padding-bottom: 1px;
     }
     
     .spaceSobre, .spaceContato{
@@ -238,13 +246,14 @@ body {
         
 
     .card {
-        border: 1px solid red;
+        border-radius: 5px;
         margin-top: 50px;
         display: flex;
         padding: 2px;
     }
 
     .card img {
+        border-radius: 5px;
         display: flex;
         width: 450px;
         height: auto;
@@ -255,7 +264,7 @@ body {
     }
 
     .card:hover {
-        background-color: rgb(218, 240, 255);
+        background-color: rgb(255, 255, 255);
         transition: background-color 0.1s;
 
     }

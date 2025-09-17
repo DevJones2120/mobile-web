@@ -1,33 +1,26 @@
 const form = document.getElementById("newForm");
+const mensagem = document.getElementById("mensagem");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault()
     
     const email = document.querySelector("#email").value.trim();
-
-console.log(email)
     
     // Condição de validação
     if (email === "") {
-        alert("imail inválido");
+        mensagem.textContent = "Preencha o campo de Email ! ❌";
+        mensagem.style.color = "red"
         return false;
-        
     } 
 
     // Validação simples: tem @ e .
     if (!email.includes("@") || !email.includes(".")) {
-        alert("Email inválido, tente novamemte !");
-        return;
+        mensagem.textContent = "Email inválido, tente novamente ! ⚠️";
+        return false;
 
     }
 
-    if (email.value) {
-        innerHTML = "Email cadastrado com sucesso! ✅"
-        email.style.display = "block";
-    }
-   
-    email.style.display = "none";
-
+    mensagem.textContent = "Email cadastrado com sucesso ! ✅"
 
 
     // Limpa o campo
