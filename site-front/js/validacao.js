@@ -2,7 +2,7 @@ const form = document.getElementById("newForm");
 const mensagem = document.getElementById("mensagem");
 
 form.addEventListener("submit", function(event) {
-    event.preventDefault()
+    event.preventDefault();
     
     const email = document.querySelector("#email").value.trim();
     
@@ -20,7 +20,7 @@ form.addEventListener("submit", function(event) {
 
     }
 
-    mensagem.textContent = "Email cadastrado com sucesso ! ✅"
+    mensagem.textContent = "Email cadastrado com sucesso ! ✅";
 
 
     // Limpa o campo
