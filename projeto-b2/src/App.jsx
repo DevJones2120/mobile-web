@@ -8,7 +8,8 @@ function App() {
   return (
     <main className="container">
 
-      <Header/>
+      <Header title ="Meu Site"/>
+
 
     </main>
   
