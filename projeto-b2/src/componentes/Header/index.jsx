@@ -3,17 +3,17 @@
 const Header = (props) => {
 
 const headerStyle = {
-    background: '#faec2eff',
+    background: 'rgb(67, 112, 87)',
     padding: '20px',
     textAlign:'center',
-    borderBottom: '5px solid rgb(184, 0, 31)'
+    borderBottom: '5px solid rgb(177, 171, 134)'
 }
 
 
 const titleStyle = {
     margin: 0,
     fontSize: '24px',
-    color: 'rgb(184, 0, 31)'
+    color: 'rgb(177, 171, 134)'
 }
 
 

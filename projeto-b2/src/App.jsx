@@ -2,6 +2,7 @@ import Header from "./componentes/Header"
 import Banner from "./componentes/Banner"
 import ImgCard from "./componentes/ImgCard"
 import "./App.css"
+import Button from "./componentes/Button"
 
 
 
@@ -17,7 +18,9 @@ function App() {
         <p>Aqui você encontra as melhores ofertas!</p>
       </Banner>
 
-      <ImgCard></ImgCard>
+      <ImgCard caption="Uma imagem interessante" />
+
+      <Button text="Clique aqui"/>
 
     </main>
   )
