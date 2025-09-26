@@ -16,6 +16,9 @@ console.log(props)
                 {props.texto}
             </p>
                
+            
+            <a href={props.link} target="_blank">{props.link}</a>
+
         </div>
     )
 }

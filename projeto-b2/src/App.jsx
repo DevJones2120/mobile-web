@@ -26,19 +26,22 @@ function App() {
       <ImgCard
         caption="Uma imagem interessante"
         imagem={img1}
-        texto="Lorem ipsum, Popeto"
+        texto="Popeto andando"
+        link="https://www.terra.com.br/"
         />
 
       <ImgCard
         caption="Popeto"
         imagem={img2}
-        texto="Lorem ipsum, Popeto"
+        texto="Floresta do Popeto"
+        link="https://g1.globo.com/"
         />
 
       <ImgCard
         caption="Floresta"
         imagem={img3}
-        texto="Lorem ipsum, Popeto"
+        texto="Montanhas do Popeto"
+        link="https://www.uol.com.br/"
         />
 
       <Button text="Clique aqui" onclick={handleClick}/>
