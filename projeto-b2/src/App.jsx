@@ -1,12 +1,17 @@
 import Header from "./componentes/Header"
 import Banner from "./componentes/Banner"
 import ImgCard from "./componentes/ImgCard"
-import "./App.css"
 import Button from "./componentes/Button"
-
-
+import img1 from "./assets/img-card1.jpg"
+import img2 from "./assets/img-card2.jpg"
+import img3 from "./assets/img-card3.jpg"
+import "./App.css"
 
 function App() {
+  
+  const handleClick = () => {
+    console.log("testes")
+  }
 
   return (
     <main className="container">
@@ -18,9 +23,19 @@ function App() {
         <p>Aqui você encontra as melhores ofertas!</p>
       </Banner>
 
-      <ImgCard caption="Uma imagem interessante" />
+      <ImgCard
+        caption="Uma imagem interessante"
+        imagem={img1}/>
 
-      <Button text="Clique aqui"/>
+      <ImgCard
+        caption="Popeto"
+        imagem={img2}/>
+
+      <ImgCard
+        caption="Floresta"
+        imagem={img3}/>
+
+      <Button text="Clique aqui" onclick={handleClick}/>
 
     </main>
   )

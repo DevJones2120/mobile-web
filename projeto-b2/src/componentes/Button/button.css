@@ -1,0 +1,16 @@
+/* button.css */
+.custom-button {
+    background-color: rgb(67, 112, 87);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    border: 2px solid rgb(67, 112, 87) ;
+    background-color: rgb(177, 171, 134);
+  }
