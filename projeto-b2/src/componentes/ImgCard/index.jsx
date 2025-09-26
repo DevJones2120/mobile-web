@@ -8,8 +8,14 @@ console.log(props)
         <div className='image-card'>
             <img src={props.imagem} alt={props.caption || 'Imagem Padrão'} />
             
-            <p className="image-card-caption"></p>
-                {props.caption}
+            <h1 className="image-card-caption">
+                 {props.caption}
+            </h1>
+
+            <p>
+                {props.texto}
+            </p>
+               
         </div>
     )
 }

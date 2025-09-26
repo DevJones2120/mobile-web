@@ -25,15 +25,21 @@ function App() {
 
       <ImgCard
         caption="Uma imagem interessante"
-        imagem={img1}/>
+        imagem={img1}
+        texto="Lorem ipsum, Popeto"
+        />
 
       <ImgCard
         caption="Popeto"
-        imagem={img2}/>
+        imagem={img2}
+        texto="Lorem ipsum, Popeto"
+        />
 
       <ImgCard
         caption="Floresta"
-        imagem={img3}/>
+        imagem={img3}
+        texto="Lorem ipsum, Popeto"
+        />
 
       <Button text="Clique aqui" onclick={handleClick}/>
 
