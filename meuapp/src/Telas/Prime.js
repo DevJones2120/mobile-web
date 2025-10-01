@@ -42,7 +42,8 @@ const estilos = StyleSheet.create({
   cursosContent: {
     whidth: "100%",
     height: 285,
-    backgroundColor: "rgba(130, 178, 226, 1)",
+    backgroundColor: "rgb(220, 20, 60)",
+    
     
   },
 
@@ -54,7 +55,8 @@ const estilos = StyleSheet.create({
     paddingBottom: 8,
     paddingLeft:25,
     fontSize: 20,
-    filter: 'dropShadow(5 5 10 rgba(202, 63, 63, 0.5))',
+    backgroundColor: "rgba(229, 240, 252, 1)",
+    
   },
 
 });
