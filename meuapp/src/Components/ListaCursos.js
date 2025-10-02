@@ -46,7 +46,7 @@ const estilos = StyleSheet.create({
 
     text: {
         fontSize: 16,
-        color: "rgb(220, 20, 60)",
+        color: "rgba(0, 0, 0, 1)",
 
     }
 })
