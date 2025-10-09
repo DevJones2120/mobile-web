@@ -24,7 +24,7 @@ export default function Prime() {
     <ListaCursos></ListaCursos>
 
     <View style={estilos.meio}>
-      <Text style={estilos.tituloAluno}>🗒️Liista de Alunos</Text>
+      <Text style={estilos.tituloAluno}>🗒️Lista de Alunos</Text>
     </View>
 
     <ListaAlunos></ListaAlunos>
@@ -32,6 +32,7 @@ export default function Prime() {
     
   )
 }
+
 
 const estilos = StyleSheet.create({
   topo: {
@@ -43,8 +44,10 @@ const estilos = StyleSheet.create({
     width: "100%",
     backgroundColor: "rgb(220, 20, 60)",
   },
-
+ 
   tituloHeader: {
+    fontWeight: "bold",
+    fontStyle: "italic",
     whidth: "100%",
     color: "white",
     textAlign: "center",
