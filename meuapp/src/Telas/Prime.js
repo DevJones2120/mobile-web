@@ -8,7 +8,7 @@ export default function Prime() {
   return (
     <>
     <View style={estilos.topo}>
-      <Text style={estilos.tituloHeader}>SENAI</Text>
+      <Text style={estilos.tituloHeader}>SENAI - Nova branch</Text>
     </View>
 
     <ListaPessoas/>
