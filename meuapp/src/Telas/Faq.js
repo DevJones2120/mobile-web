@@ -1,17 +1,23 @@
-import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, Input } from 'react-native';
+import imagemFaq from "../../assets/faq1.jpg";
 
 export default function Faq() {
   return (
-    <View>
-        <Text style = {estilos.texto}>Faq</Text>
+    <View style = {estilos.container}>
+        <Text style = {estilos.texto}>Tire suas dúvidas sobre os próximos jogos.</Text>
 
     </View>
   )
 }
 
-const estilos = StyleSheet ({
+const estilos = StyleSheet.create ({
+    container: {
+        padding: 20,
+    },
+
     texto: {
-        
+        fontSize: 20,
+        padding: 20,
+        fontWeight: "bold",
     }
 })
