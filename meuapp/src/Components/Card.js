@@ -20,7 +20,7 @@ const estilos = StyleSheet.create({
         borderRadius: 1.41,
         shadowColor: "rgb(234, 34, 100)",
         shadowOpacity: 0.2,
-        elevation: 2,
+        elevation: 20,
         padding: 20,
         margin: 20,
     },
