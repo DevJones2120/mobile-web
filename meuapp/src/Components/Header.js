@@ -4,7 +4,7 @@ import { Text, View, StyleSheet } from "react-native"
 export default function Header() {
     return (
         <View style={estilos.topo}>
-            <Text style={estilos.tituloHeader}>Fut Popeto</Text>
+            <Text style={estilos.tituloHeader}>SENAI</Text>
         </View>
     )
 }

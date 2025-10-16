@@ -20,7 +20,7 @@ export default function Faq() {
     </View>
     <View>
         <Text>Descreva sua dúvida: </Text>
-        <Text style={estilos.inputDuvida}/>
+        <TextInput style={estilos.inputDuvida}/>
     </View>
 
     </View>

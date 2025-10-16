@@ -1,0 +1,26 @@
+{
+    "contatos": [
+        {
+            "id": "1",
+            "nome": "Jão Silva",
+            "telefone": "11978787878"
+        },
+        {
+            "id": "2",
+            "nome": "Giovanni Ribeiro",
+            "telefone": "11965465474"
+        }
+    ],
+    "fac": [
+        {
+            "id": "1",
+            "pergunta": "O que é JSON SERVER",
+            "reposta": "JSON SERVER é uma ferramenta que permite criar uma API..."
+        },
+        {
+            "id": "07",
+            "pergunta": "O que é Localhost",
+            "reposta": "É um termo de rede que se refere ao seu próprio computador, usando o endereço IP ..."
+        }
+    ]
+}
