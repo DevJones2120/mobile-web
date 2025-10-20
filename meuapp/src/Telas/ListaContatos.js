@@ -14,7 +14,7 @@ export default function ListaContatos() {
                 setContatos(resposta.data)
             })
             .catch((error) => {
-                console.error("Erro ao buscar contatos", error) 
+                console.error("Erro ao buscar contatos.", error) 
             })
     }
 

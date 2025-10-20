@@ -1,35 +1,48 @@
 import { useEffect, useState } from 'react'
+import axios from "axios";
 import { Text, View, StyleSheet, Image, TextInput, ScrollView } from 'react-native';
 import imagem1 from "../../assets/imgPng-1.png";
+
 
 export default function Faq() {
     const [faq, setfaq] = useState ([]);
 
-    // Função para buscar contatos do servidor
-    const faqFunction = () => {
+    // Função para buscar faq do servidor
+    const infoFaq = () => {
         axios
-            .get("http://10.0.2.2:3000/contatos")
-            .then((resposta) => {
-                setFaq(resposta.data)
+            .get("http://10.0.2.2:3000/faq")
+            .then((res) => {
+                setfaq(res.data)
             })
             .catch((error) => {
-                console.error("Erro ao buscar contatos", error) 
+                console.error("Erro ao buscar resposta.", error) 
             })
     }
 
     // Use o useEffect para buscar dados
     useEffect(() => {
-        listaContatos()
+        infoFaq()
     }, [])
 
-
-export default function Faq() {
   return (
     <ScrollView >
         <View style = {estilos.container}>
 
         <Text style={estilos.texto}>Tire suas dúvidas conosco.</Text>
         <Image source={imagem1} style={estilos.imagemTopo} />
+        {faq.length > 0 ? (
+            faq.map((item, index) => (
+                <View key={index}>
+                    <Text>{item.pergunta}</Text>
+                    <Text>{item.resposta}</Text>
+
+                </View>
+               
+                ))
+        ) : (
+            <Text >Nenhuma informação disponível</Text>
+        )}
+
 
         <Text style={estilos.textoPreencher}>Preencha os campos abaixo. </Text>
     <View>
@@ -44,7 +57,7 @@ export default function Faq() {
         <Text>Descreva sua dúvida: </Text>
         <TextInput style={estilos.inputDuvida}/>
     </View>
-
+    
     </View>
     </ScrollView>
   )
