@@ -18,9 +18,6 @@ const estilos = StyleSheet.create({
     container: {
         backgroundColor: "#ffff",
         borderRadius: 1.41,
-        shadowColor: "rgb(234, 34, 100)",
-        shadowOpacity: 0.2,
-        elevation: 20,
         padding: 20,
         margin: 20,
     },

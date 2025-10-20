@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
-import Imagem1 from "../../assets/img-1.jpg"
+import Imagem1 from "../../assets/imgPng-3.png"
 import Imagem2 from "../../assets/img-1.jpg"
 
 
@@ -14,11 +14,14 @@ export default function Sobre() {
 
   return (
     <ScrollView style={estilos.container}>
-        <Text>Sobre</Text>
-        <Image source={Imagem1} style={estilos.image}/>
+        <Text style={estilos.titulo}>Sobre</Text>
+        
+        <Image source={Imagem1} style={estilos.img}/>
         <View style={estilos.line}/>
-        <Image source={Imagem2} style={estilos.image}/>
+
+        <Image source={Imagem2} style={estilos.img}/>
         <View style={estilos.line}/>
+
         <Text style={estilos.titulo}>Sobre o APP</Text>
         <Text>Nome: {info.nomeApp}</Text>
         <Text>Versão: {info.versao}</Text>
@@ -29,20 +32,21 @@ export default function Sobre() {
 
 const estilos = StyleSheet.create({
   container: {
-    padding: 80,
+    padding: 60,
+  },
+  titulo: {
+    fontSize: 25,
+    padding: 60,
   },
 
-  image: {
-    padding: 10,
-    margin: 10,
-    borderRadius: 8,
-    borderColor: "red",
-    borderWidth: 2,
+  img: {
+    width: 300,
+    height: 300,
   },
 
   line: {
     width: "90%",
-    height: 1,
+    height: 2,
     backgroundColor: "rgb(254, 56, 92)",
     marginVertical: 10,
   },

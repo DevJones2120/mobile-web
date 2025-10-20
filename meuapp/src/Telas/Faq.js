@@ -1,5 +1,27 @@
+import { useEffect, useState } from 'react'
 import { Text, View, StyleSheet, Image, TextInput, ScrollView } from 'react-native';
-import imagem1 from "../../assets/img-1.png";
+import imagem1 from "../../assets/imgPng-1.png";
+
+export default function Faq() {
+    const [faq, setfaq] = useState ([]);
+
+    // Função para buscar contatos do servidor
+    const faqFunction = () => {
+        axios
+            .get("http://10.0.2.2:3000/contatos")
+            .then((resposta) => {
+                setFaq(resposta.data)
+            })
+            .catch((error) => {
+                console.error("Erro ao buscar contatos", error) 
+            })
+    }
+
+    // Use o useEffect para buscar dados
+    useEffect(() => {
+        listaContatos()
+    }, [])
+
 
 export default function Faq() {
   return (
@@ -44,7 +66,7 @@ const estilos = StyleSheet.create ({
     },
 
     texto: {
-        fontSize: 20,
+        fontSize: 25,
         padding: 20,
         fontWeight: "bold",
         
