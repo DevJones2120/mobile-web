@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import Imagem1 from "../../assets/imgPng-3.png"
-import Imagem2 from "../../assets/img-1.jpg"
+import Imagem2 from "../../assets/imgPng-4.png"
 
 
 export default function Sobre() {

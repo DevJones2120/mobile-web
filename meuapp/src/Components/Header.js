@@ -13,7 +13,7 @@ const estilos = StyleSheet.create({
     topo: {
         width: "100%",
         height: 120,
-        backgroundColor: "rgb(255, 149, 39)",
+        backgroundColor: "rgb(252, 48, 86)",
         borderBottomColor: "rgb(254, 56, 92)",
         borderBottomWidth: 3,
     },

@@ -4,6 +4,7 @@ import { Text, View, StyleSheet, Image, TextInput, ScrollView } from 'react-nati
 import imagem1 from "../../assets/imgPng-1.png";
 
 
+
 export default function Faq() {
     const [faq, setfaq] = useState ([]);
 
@@ -33,9 +34,8 @@ export default function Faq() {
         {faq.length > 0 ? (
             faq.map((item, index) => (
                 <View key={index}>
-                    <Text>{item.pergunta}</Text>
-                    <Text>{item.resposta}</Text>
-
+                    <Text >{item.pergunta}</Text>
+                    <Text >{item.resposta}</Text>
                 </View>
                
                 ))
