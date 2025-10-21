@@ -26,13 +26,14 @@ export default function Sobre() {
         <Text>Nome: {info.nomeApp}</Text>
         <Text>Versão: {info.versao}</Text>
         <Text>Desenvolvido: {info.desenvolvedor}</Text>
+         <Text>Desenvolvido: {info.desenvolvedor}</Text>
     </ScrollView>
   )
 }
 
 const estilos = StyleSheet.create({
   container: {
-    padding: 60,
+    margin: 50,
   },
   titulo: {
     fontSize: 25,

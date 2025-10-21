@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from "axios";
 import { Text, View, StyleSheet, Image, TextInput, ScrollView } from 'react-native';
 import imagem1 from "../../assets/imgPng-1.png";
-
+import imagem2 from "../../assets/imgPng-5.png";
 
 
 export default function Faq() {
@@ -33,8 +33,9 @@ export default function Faq() {
         <Image source={imagem1} style={estilos.imagemTopo} />
         {faq.length > 0 ? (
             faq.map((item, index) => (
-                <View key={index}>
+                <View style={estilos.texto} key={index}>
                     <Text >{item.pergunta}</Text>
+                    <Image source={imagem2} style={estilos.img}/>
                     <Text >{item.resposta}</Text>
                 </View>
                
@@ -77,7 +78,10 @@ const estilos = StyleSheet.create ({
         shadowOpacity: 0.9,
         elevation: 20,
     },
-
+    img: {
+        width: 250,
+        height: 250,
+    },
     texto: {
         fontSize: 25,
         padding: 20,

@@ -18,6 +18,21 @@ export default function ListaContatos() {
             })
     }
 
+    // Função para excluir um contato
+    const deleteContato = (id) => {
+        axios
+        .delete(`http://10.0.2.2:3000/contatos/${id}`)
+        .then(() => {
+            //Atualizar lista contato
+            setContatos(contatos.filter((contato) => contato !== id));
+            Alert.alert("Sucesso", "Contato excluido com sucesso!")
+        })
+        .catch((error) => {
+            console.log("Erro ao excluir contato", error)
+            Alert.alert("Erro ao excluir")
+        });
+    }
+
     // Use o useEffect para buscar dados
     useEffect(() => {
         listaContatos()
@@ -34,7 +49,7 @@ export default function ListaContatos() {
                     <Text style={estilos.telefone}>📞 Telefone: {contato.telefone}</Text>
                     <Button
                         title="Excluir"
-                        onPress={() => Alert.alert("Aviso", "você clicou no botão")}
+                        onPress={() => deleteContato(contato.id)}
                     />
                 </View>
             ))
