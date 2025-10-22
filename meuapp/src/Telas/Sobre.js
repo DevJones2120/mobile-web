@@ -6,7 +6,7 @@ import Imagem2 from "../../assets/imgPng-4.png"
 
 export default function Sobre() {
   const info = {
-    nomeApp: "Fut Popeto",
+    nomeApp: "SENAIp's",
     versao: "1.0.0",
     desenvolvedor: "DevJones",
   }
@@ -26,7 +26,6 @@ export default function Sobre() {
         <Text>Nome: {info.nomeApp}</Text>
         <Text>Versão: {info.versao}</Text>
         <Text>Desenvolvido: {info.desenvolvedor}</Text>
-         <Text>Desenvolvido: {info.desenvolvedor}</Text>
     </ScrollView>
   )
 }

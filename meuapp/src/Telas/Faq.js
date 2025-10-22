@@ -34,7 +34,7 @@ export default function Faq() {
         {faq.length > 0 ? (
             faq.map((item, index) => (
                 <View style={estilos.texto} key={index}>
-                    <Text >{item.pergunta}</Text>
+                    <Text style={estilos.intemPergunta} >{item.pergunta}</Text>
                     <Image source={imagem2} style={estilos.img}/>
                     <Text >{item.resposta}</Text>
                 </View>
@@ -85,16 +85,17 @@ const estilos = StyleSheet.create ({
     texto: {
         fontSize: 25,
         padding: 20,
-        fontWeight: "bold",
-        
+        fontWeight: "bold", 
     },
-
     textoPreencher: {
         fontSize: 15,
         paddingTop: 20,
         paddingBottom: 20,
         fontWeight: "bold",
-        
+    },
+    intemPergunta: {
+        fontWeight: "bold",
+        fontSize: 20,
     },
     inputDuvida: {
         height: 200,
@@ -102,7 +103,6 @@ const estilos = StyleSheet.create ({
         borderWidth: 2,
         borderColor: "rgb(254, 56, 92)",
     },
-
     input: {
         marginTop: 10,
         marginBottom: 20,

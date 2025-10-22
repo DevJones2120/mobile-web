@@ -30,6 +30,13 @@ export default function Home() {
           textButton="Ir para Contato"
           onPress={ () => navigation.navigate("ListaContatos") }
         />
+
+        <Card 
+          title="Cadastro"  
+          content="Usuários para cadastrar."
+          textButton="Ir para Cadastro"
+          onPress={ () => navigation.navigate("Cadastro") }
+        />
     </View>
   )
 }
