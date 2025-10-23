@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Button, } from 'react-native'
+import { Text, View, StyleSheet, Button, TouchableOpacity, } from 'react-native'
 
 export default function Card(props) {
 
@@ -6,10 +6,9 @@ export default function Card(props) {
         <View style={estilos.container}>
             <Text style={estilos.cardTitle}>{props.title}</Text>
             <Text style={estilos.cardContent}>{props.content}</Text>
-            <Button
-                title={props.textButton}
-                onPress={props.onPress}
-            />
+            <TouchableOpacity style={estilos.button} onPress={props.onPress} >
+                <Text style={estilos.titleButton} >{props.textButton}</Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -28,5 +27,20 @@ const estilos = StyleSheet.create({
     cardContent: {
         fontSize: 14,
         marginBottom: 10,
+    },
+    button: {
+        backgroundColor: "rgb(254, 56, 92)",
+        borderColor: "#000000ff",
+        borderRadius: 8,
+        padding: 6,
+        marginLeft: 20,
+        marginRight: 20,
+        alignItems: "center",
+    },
+    titleButton: {
+        borderColor: "#000000ff",
+        color: "#FFF",
+        fontWeight: "bold",
+        fontSize: 18,
     }
 });

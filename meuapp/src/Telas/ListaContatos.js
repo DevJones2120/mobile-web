@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Text, View, StyleSheet, Image, ScrollView, Button, Alert } from 'react-native';
+import { Text, View, StyleSheet, Image, ScrollView, Button, Alert, TouchableOpacity } from 'react-native';
 import axios from "axios";
 import imagem2 from "../../assets/imgPng-2.png"
 
@@ -47,10 +47,11 @@ export default function ListaContatos() {
                 <View style={estilos.dados} key={index}>
                     <Text style={estilos.nome}>👤 Nome: {contato.nome}</Text>
                     <Text style={estilos.telefone}>📞 Telefone: {contato.telefone}</Text>
-                    <Button
+                    <TouchableOpacity>
+                        color="rgb(252, 46, 85)"
                         title="Excluir"
                         onPress={() => deleteContato(contato.id)}
-                    />
+                    </TouchableOpacity>
                 </View>
             ))
         ) : (
@@ -68,7 +69,7 @@ const estilos = StyleSheet.create({
     dados: {
         borderRadius: 20,
         borderWidth: 2,
-        borderColor: "rgb(254, 56, 92)",
+        borderColor: "rgba(223, 38, 72, 1)",
         padding: 8,
         margin: 20,
     },

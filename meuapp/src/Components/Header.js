@@ -22,7 +22,8 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         color:"#fff",
         fontWeight:"bold",
-        fontSize:20,
+        fontStyle: "italic",
+        fontSize:40,
         paddingTop:45
     }
 })
