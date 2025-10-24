@@ -43,17 +43,27 @@ export default function ListaContatos() {
     <ScrollView style={estilos.container}>
         <Text style={estilos.titulo}>Lista de Contatos</Text>
         <Image source={imagem2} style={estilos.img} />
+
         {contatos.length > 0 ? (
+
             contatos.map((contato, index) => (
                 <View style={estilos.dados} key={index}>
                     <Image style={estilos.imgUser} source={imagem6}/>
-                    <Text style={estilos.nome}>👤 Nome: {contato.nome}</Text>
-                    <Text style={estilos.telefone}>📞 Telefone: {contato.telefone}</Text>
+
+                    <Text style={estilos.infoContato}>👤 Nome: {contato.nome}</Text>
+                    <Text style={estilos.infoContato}>📞 Telefone: {contato.telefone}</Text>
+                    <Text style={estilos.infoContato}>📩 Email: {contato.email}</Text>
+
                     <TouchableOpacity style={estilos.button} onPress={() => deleteContato(contato.id)}>
-                        <Text style={estilos.titleButton}>Excluir</Text>
+                        <Text style={estilos.deleteButton}>Excluir</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity>
+                        <Text>Alterar</Text>
                     </TouchableOpacity>
                 </View>
             ))
+
         ) : (
             <Text >Nenhum contato disponível</Text>
         )}
@@ -82,7 +92,7 @@ const estilos = StyleSheet.create({
         marginRight: 50,
         margin: 10,
     },
-    titleButton: {
+    deleteButton: {
         borderColor: "#000000ff",
         color: "#FFF",
         fontWeight: "bold",
@@ -96,21 +106,16 @@ const estilos = StyleSheet.create({
         fontWeight: "bold",
     },
     img: {
-        width: 250,
-        height: 250,
-        marginLeft: 50
+        width: 200,
+        height: 200,
+        marginLeft: 80
     },
     imgUser: {
         width: 150,
         height: 150,
         marginLeft: 90
     },
-    nome: {
-        fontSize: 16,
-        paddingLeft: 60,
-        padding: 10,
-    },
-    telefone: {
+    infoContato: {
         fontSize: 16,
         paddingLeft: 60,
         padding: 10,

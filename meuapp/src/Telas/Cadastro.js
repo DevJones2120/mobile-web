@@ -1,22 +1,22 @@
 import { useState } from "react";
-import { Button, View, Text, TextInput, StyleSheet, Alert, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, StyleSheet, Alert, TouchableOpacity } from "react-native";
 import   axios from "axios";
 import { useNavigation } from "@react-navigation/native";
 
 export default function Cadastro() {
     const [nome, setNome] = useState(" ");
     const [telefone, setTelefone] = useState("");
+    const [email, setEmail] = useState("");
     const navigation = useNavigation();
     
 
     const enviarContato = async () => {
-        if (!nome || !telefone) {
+        if (!nome || !telefone || !email) {
             Alert.alert("Erro, por favor preencha todos os campos!");
             return;
         }
 
-         const novoContato = {nome, telefone};
-    
+        const novoContato = {nome, telefone, email};
 
     axios.post('http://10.0.2.2:3000/contatos', novoContato)
         .then(resposta => {
@@ -24,27 +24,13 @@ export default function Cadastro() {
                 Alert.alert("Sucesso, Contato adicionado!");
                 setNome("");
                 setTelefone("");
-                navigation.navigate("ListaContatos")
-            } else {
-                Alert.alert("Erro, falha ao adicionar");
-            }
-        })
-        axios.post('http://10.0.2.2:3000/contatos', novoContato)
-        .then(resposta => {
-            if (resposta.status == 201) {
-                Alert.alert<Image>("Sucesso, Contato adicionado!");
-                setNome("");
-                setTelefone("");
+                setEmail("");
                 navigation.navigate("ListaContatos")
             } else {
                 Alert.alert("Erro, falha ao adicionar");
             }
         })
     }
-     
-
-   
-
 
   return (
     <View style={estilos.container}>
@@ -61,6 +47,13 @@ export default function Cadastro() {
             value={telefone}
             onChangeText={setTelefone}
             placeholder="Digite seu telefone" 
+        />
+        <Text>Email :</Text>
+        <TextInput
+            style={estilos.input}
+            value={email}
+            onChangeText={setEmail}
+            placeholder="Digite seu email"    
         />
 
         {/* <Button title="Cadastrar" onPress={enviarContato}/> */}
